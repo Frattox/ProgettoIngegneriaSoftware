@@ -2,6 +2,7 @@ package elementi;
 
 public class TabelloneMatrix extends Tabellone{
 
+    //PATTERN BRIDGE
     private  Casella[][] tabella;
 
     private TabelloneMatrix()

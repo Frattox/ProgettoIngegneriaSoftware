@@ -11,10 +11,10 @@ public abstract class Tabellone {
     protected Tabellone(int R, int C){this.R=R; this.C=C;}
 
 
-    //FACTORY METHOD: tabellone default
+    //PATTERN FACTORY METHOD: tabellone default
     public abstract Tabellone create();
 
-    //FACTORY METHOD: tabellone personalizzato
+    //PATTERN FACTORY METHOD: tabellone personalizzato
     public abstract Tabellone create(int R, int C);
 
 
