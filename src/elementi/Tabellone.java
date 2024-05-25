@@ -17,5 +17,10 @@ public abstract class Tabellone {
     //PATTERN FACTORY METHOD: tabellone personalizzato
     public abstract Tabellone create(int R, int C);
 
+    public abstract Casella getCasella(int i, int j);
+
+    //ritorna la casella sostituita
+    public abstract Casella setCasella(int i, int j, Casella c);
+
 
 }

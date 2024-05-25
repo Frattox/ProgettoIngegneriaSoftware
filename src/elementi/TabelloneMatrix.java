@@ -5,18 +5,15 @@ public class TabelloneMatrix extends Tabellone{
     //PATTERN BRIDGE
     private  Casella[][] tabella;
 
-    private TabelloneMatrix()
-    {
+    private TabelloneMatrix() {
         super();
         tabella = new Casella[this.R][this.C];
     }
 
-    private TabelloneMatrix(int R, int C)
-    {
+    private TabelloneMatrix(int R, int C) {
         super(R,C);
         tabella = new Casella[this.R][this.C];
     }
-
 
     @Override
     public Tabellone create(){return new TabelloneMatrix();}
@@ -24,5 +21,14 @@ public class TabelloneMatrix extends Tabellone{
     @Override
     public Tabellone create(int R, int C){return new TabelloneMatrix(R,C);}
 
+    @Override
+    public Casella getCasella(int i, int j) {return tabella[i][j];}
+
+    @Override
+    public Casella setCasella(int i, int j, Casella c) {
+        Casella ret = tabella[i][j];
+        tabella[i][j] = c;
+        return ret;
+    }
 
 }
