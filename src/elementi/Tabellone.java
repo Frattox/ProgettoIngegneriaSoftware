@@ -10,6 +10,10 @@ public abstract class Tabellone {
     //Crea il tabellone personalizzato
     protected Tabellone(int R, int C){this.R=R; this.C=C;}
 
+    public int getR(){return this.R;}
+
+    public int getC(){return this.R;}
+
 
     //PATTERN FACTORY METHOD: tabellone default
     public abstract Tabellone create();
