@@ -1,14 +1,9 @@
 package elementi;
 
-public interface Pedina {
+public class Pedina {
+    private Posizione pos;
 
-    //ritorna la x sostituita
-    int setX(int x);
+    public Posizione getPos() {return pos;}
 
-    //ritorna la y sostituita
-    int setY(int y);
-
-    int getX();
-
-    int getY();
+    public void setPos(Posizione pos) {this.pos = pos;}
 }
